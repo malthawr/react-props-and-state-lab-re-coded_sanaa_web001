@@ -22,10 +22,10 @@ class App extends React.Component {
         }
       )
     }
-  
+
     onFindPets = () => {
       let url = "/api/pets" ;
-  
+
       if (this.state.filters.type !=="all") {
         url += `?type=${this.state.filters.type}`;
       }
