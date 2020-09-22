@@ -6,8 +6,10 @@ class Pet extends React.Component {
       <div className="card">
         <div className="content">
           <a className="header">
-            {/*'♀' OR '♂' */}
-            PET NAME
+          {this.props.pet.name} {' '}
+          {
+          this.props.pet.gender === 'female' ? '♀' : '♂'
+          }
           </a>
           <div className="meta">
             <span className="date">PET TYPE</span>
